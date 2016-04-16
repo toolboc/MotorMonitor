@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotorMonitor", "MotorMonitor.csproj", "{C29573D0-3A75-4428-8987-91436BD7D4AD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamlBrewer.Uwp.RadialGaugeControl", "..\XamlBrewer.Uwp.RadialGaugeControl\XamlBrewer.Uwp.RadialGaugeControl.csproj", "{7887E15E-0900-442F-BE6A-93FA8F901694}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PwmSoftware", "..\PwmSoftware\PwmSoftware.vcxproj", "{07864646-FA68-4C58-84CF-9470B0428301}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PwmPCA9685", "..\PwmPCA9685\PwmPCA9685.vcxproj", "{D5440DB9-22CA-4FC5-BC14-D42FA2ABA46A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,20 @@ Global
 		{07864646-FA68-4C58-84CF-9470B0428301}.Release|x64.Build.0 = Release|x64
 		{07864646-FA68-4C58-84CF-9470B0428301}.Release|x86.ActiveCfg = Release|Win32
 		{07864646-FA68-4C58-84CF-9470B0428301}.Release|x86.Build.0 = Release|Win32
+		{D5440DB9-22CA-4FC5-BC14-D42FA2ABA46A}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{D5440DB9-22CA-4FC5-BC14-D42FA2ABA46A}.Debug|ARM.ActiveCfg = Debug|ARM
+		{D5440DB9-22CA-4FC5-BC14-D42FA2ABA46A}.Debug|ARM.Build.0 = Debug|ARM
+		{D5440DB9-22CA-4FC5-BC14-D42FA2ABA46A}.Debug|x64.ActiveCfg = Debug|x64
+		{D5440DB9-22CA-4FC5-BC14-D42FA2ABA46A}.Debug|x64.Build.0 = Debug|x64
+		{D5440DB9-22CA-4FC5-BC14-D42FA2ABA46A}.Debug|x86.ActiveCfg = Debug|Win32
+		{D5440DB9-22CA-4FC5-BC14-D42FA2ABA46A}.Debug|x86.Build.0 = Debug|Win32
+		{D5440DB9-22CA-4FC5-BC14-D42FA2ABA46A}.Release|Any CPU.ActiveCfg = Release|Win32
+		{D5440DB9-22CA-4FC5-BC14-D42FA2ABA46A}.Release|ARM.ActiveCfg = Release|ARM
+		{D5440DB9-22CA-4FC5-BC14-D42FA2ABA46A}.Release|ARM.Build.0 = Release|ARM
+		{D5440DB9-22CA-4FC5-BC14-D42FA2ABA46A}.Release|x64.ActiveCfg = Release|x64
+		{D5440DB9-22CA-4FC5-BC14-D42FA2ABA46A}.Release|x64.Build.0 = Release|x64
+		{D5440DB9-22CA-4FC5-BC14-D42FA2ABA46A}.Release|x86.ActiveCfg = Release|Win32
+		{D5440DB9-22CA-4FC5-BC14-D42FA2ABA46A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

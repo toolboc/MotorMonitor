@@ -134,9 +134,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PwmSoftware\PwmSoftware.vcxproj">
-      <Project>{07864646-fa68-4c58-84cf-9470b0428301}</Project>
-      <Name>PwmSoftware</Name>
+    <ProjectReference Include="..\PwmPCA9685\PwmPCA9685.vcxproj">
+      <Project>{d5440db9-22ca-4fc5-bc14-d42fa2aba46a}</Project>
+      <Name>PwmPCA9685</Name>
     </ProjectReference>
     <ProjectReference Include="..\XamlBrewer.Uwp.RadialGaugeControl\XamlBrewer.Uwp.RadialGaugeControl.csproj">
       <Project>{7887e15e-0900-442f-be6a-93fa8f901694}</Project>

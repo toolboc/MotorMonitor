@@ -13,7 +13,7 @@ namespace MotorMonitor
 {
     public sealed partial class MainPage : Page
     {
-        private const int REED_SWITCH = 28; //28 for DragonBoard 410c //18 for RPi;
+        private const int REED_SWITCH = 18; //28 for DragonBoard 410c //18 for RPi;
         private GpioPin reedSwitch;
 
         double wheelDiameterInMeters = .1016; //4 inches
@@ -36,7 +36,7 @@ namespace MotorMonitor
         //private const int LED_PIN = 33;
         //private GpioPin ledPin;
 
-        private const int MOTOR_PIN = 33; //33 for DragonBoard 410c //23 for RPi;
+        private const int MOTOR_PIN = 0; //33 for DragonBoard 410c //23 for RPi //0 if using hardware PWM;
         PwmPin motorPin;
 
         PwmController pwmController;
@@ -100,7 +100,8 @@ namespace MotorMonitor
 
         private async void InitMotor()
         {
-            pwmController = (await PwmController.GetControllersAsync(PwmSoftware.PwmProviderSoftware.GetPwmProvider()))[0];
+            //pwmController = (await PwmController.GetControllersAsync(PwmSoftware.PwmProviderSoftware.GetPwmProvider()))[0];
+            pwmController =  (await PwmController.GetControllersAsync(PwmPCA9685.PwmProviderPCA9685.GetPwmProvider()))[0];
             pwmController.SetDesiredFrequency(1000);
             motorPin = pwmController.OpenPin(MOTOR_PIN);
             motorPin.SetActiveDutyCyclePercentage(0);
